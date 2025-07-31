@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const dotenv = require('dotenv');
 
-const index = require('./index');
+const app = require('./index');
 
   const db = process.env.DB;
 
@@ -15,3 +15,9 @@ const index = require('./index');
   .catch((err) => {
     console.error('MongoDB connection error:', err);
   });
+
+  const port = process.env.PORT || 5000;
+
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  })
