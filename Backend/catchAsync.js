@@ -3,5 +3,3 @@
             fn(req,res,next).catch(next);
         };
     };
-
-    
