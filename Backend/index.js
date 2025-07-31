@@ -18,3 +18,5 @@ app.use(express.json({limit: '10mb'}));
 
 
 app.use(cookieParser());
+
+module.exports = app;
