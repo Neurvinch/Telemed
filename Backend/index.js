@@ -13,7 +13,7 @@ const app = express();
 app.all("/{*any}", (req , res , next) => {
     next(new AppError(`can't find ${req.originalUrl} on this server`, 400))
 })
-
+ 
 
 app.use(globalErrorHandler);
 
