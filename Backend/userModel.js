@@ -11,6 +11,8 @@ const userSchema = new mongoose.Schema({
    // resetPasswordOTP , reset password OTP expires , created aT
   
 
-   // 
+   //  hash the password before saving the plain r=text password
+
+   
     username: { }
 })
