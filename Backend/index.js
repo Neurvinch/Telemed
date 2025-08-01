@@ -4,6 +4,9 @@ const cors = require('cors');
 
 const cookieParser = require('cookie-parser');
 
+const globalErrorHandler = require('./controller/errorController')
+
+const AppError = require('./appError')
 
 const app = express();
 
