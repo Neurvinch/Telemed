@@ -10,5 +10,5 @@ const handleDuplicateFieldDB = (err) => {
 
     const message = `Duplicate field value: ${value}. Please use another value!`;
 
-    return 
+    return new AppError(message, 400);
 }
