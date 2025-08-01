@@ -14,6 +14,10 @@ app.all("/{*any}", (req , res , next) => {
     next(new AppError(`can't find ${req.originalUrl} on this server`, 400))
 })
 
+
+app.use(globalErrorHandler);
+
+
 app.use(cors({
     origin: ["http://localhost:5173",
 ],
