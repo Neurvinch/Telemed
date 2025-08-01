@@ -12,7 +12,8 @@ const userSchema = new mongoose.Schema({
   
 
    //  hash the password before saving the plain r=text password
+  
+   // this is a file where we do the schema for our db savunsg
 
-   
     username: { }
 })
