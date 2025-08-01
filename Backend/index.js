@@ -10,6 +10,9 @@ const AppError = require('./appError')
 
 const app = express();
 
+app.all("/{*any}", (req , res , next) => {
+    
+})
 
 app.use(cors({
     origin: ["http://localhost:5173",
