@@ -19,7 +19,5 @@ const handleValidationErrorDB = (err) => {
 
     const message = `Invalid input : ${errors.join(".")}`;
 
-
-    
-
+    return new AppError(message, 400);
 }
