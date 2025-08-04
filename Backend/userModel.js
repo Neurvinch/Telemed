@@ -15,5 +15,5 @@ const userSchema = new mongoose.Schema({
   
    // this is a file where we do the schema for our db savunsg
       
-    username: { }
+    username: { }  
 })
